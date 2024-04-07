@@ -1,10 +1,10 @@
 import Link from "next/link";
-import styles from "./page.module.css";
+import Catalog from "@/components/Catalog";
 
 export default function Home() {
   return (
     <div>
-      
+      <Catalog />
     </div>
   );
 }
