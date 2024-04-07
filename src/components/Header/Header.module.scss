@@ -1,0 +1,209 @@
+@import 'variables';
+@import 'mixins';
+
+
+.header {
+    position: sticky;
+    z-index: 10;
+    top: -1px;
+    margin: 46px 0 80px 0;
+    height: 60px;
+    // margin-bottom: 46px;
+    background: $white-color;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    width: 182px;
+    height: 84px;
+    transition: $transition;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+
+    &WrapImage {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+        transition: $transition;
+    }
+
+    &Wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &Text {
+        color: $black-color;
+        font-family: $font-alegreya;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        letter-spacing: 1.333px;
+        line-height: normal;
+        text-transform: uppercase;
+        transition: $transition;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+
+    &Time {
+        @include desc-text;
+    }
+}
+
+.cart {
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+
+    &WrapImage {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        transition: $transition;
+    }
+
+    &Icon {
+        position: relative;
+        margin-right: 12px;
+
+        &Badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: $hover-color;
+            color: $white-color;
+            font-family: $font-roboto;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 21px;
+            text-align: center
+        }
+    }
+
+    &Text {
+        display: flex;
+        flex-direction: column;
+
+        &Title {
+            color: $black-color;
+            font-family: $font-alegreya;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 900;
+            letter-spacing: 1px;
+            line-height: normal;
+            text-transform: uppercase;
+            transition: $transition;
+
+            &:hover {
+                color: $hover-color;
+            }
+        }
+
+        &Count {
+            @include desc-text;
+            // width: 160px;
+            height: 18px;
+        }
+    }
+}
+
+.language {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: $card-size-color;
+    color: $black-color;
+    font-family: $font-alegreya;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: $transition;
+
+    &:hover {
+        color: $hover-color;
+    }
+
+    &>span {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.isScroll {
+    &.header {
+        padding: 9px 0 9px 0;
+        box-shadow: $box-shadow;
+    }
+
+    .logo {
+        width: 68px;
+        height: 31px;
+    }
+
+    nav {
+        margin-left: auto;
+
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.889px;
+        }
+    }
+
+    .phone {
+        margin-left: auto;
+    }
+
+    .phoneWrapImage,
+    .cartWrapImage {
+        width: 32px;
+        height: 32px;
+    }
+
+    .phoneText>h4 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 1.286px;
+    }
+
+    .cart {
+        margin-left: 62px;
+
+        &TextTitle {
+            margin-right: 170px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+
+    .language {
+        display: none;
+    }
+
+}
