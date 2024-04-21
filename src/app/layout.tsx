@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import ReactQueryProvider from '@/providers/react-query';
 
 const alegreya = Alegreya({
     subsets: ['cyrillic'],
@@ -34,9 +35,11 @@ export default function RootLayout({
     return (
         <html lang="ru" className={`${alegreya.variable} ${roboto.variable}`}>
             <body className="wrapper">
-                <Header />
-                <main>{children}</main>
-                <Footer />
+                <ReactQueryProvider>
+                    <Header />
+                    <main>{children}</main>
+                    <Footer />
+                </ReactQueryProvider>
             </body>
         </html>
     );
