@@ -30,6 +30,11 @@ function Header() {
           <Image src="/assets/icons/user_header.svg" width={28} height={28} alt="" />
         </div>
          </div>
+        <div className = {styles['mesenger']}>
+            <span>Viber</span>
+            <span>Whats App</span>
+            <span>Telegram</span>
+        </div> 
             <div className = {styles['line-icon']}>
               <Image src="/assets/icons/dividers.svg" width={1216} height={10} alt=" " />
             </div>

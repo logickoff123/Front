@@ -63,10 +63,21 @@
   flex-direction: row;
   gap: 50px
 }
-.price{
+.price {
+font-family: 'Jost', sans-serif;
+color: aliceblue;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.mesenger{
+  display: flex;
+  margin-left: 356px;
   font-family: 'Jost', sans-serif;
-  color:aliceblue;
-  span{
-    padding-bottom: 5px;
+  color:#D0D0D0;
+  font-size: 13px;
+
+  span {
+    margin-right: 10px; 
   }
 }
