@@ -13,7 +13,6 @@ function Header() {
             <div className={styles['cont-icon']}>
                 <Image src="/assets/icons/Call.svg" width={28} height={28} alt="" />
                 <span className = {styles['number']}>+7 952 552-52-52</span>
-                <Image src="/assets/icons/mail.svg" width={28} height={28} alt="" className={styles['mail']} />
             </div>
               <div className = {styles['viber']}>
                 <span>Viber </span>
