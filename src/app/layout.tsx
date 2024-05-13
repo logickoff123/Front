@@ -5,7 +5,6 @@ import { Roboto } from 'next/font/google';
 
 import type { Metadata } from "next";
 
-import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import ReactQueryProvider from '@/providers/react-query';
 
@@ -38,7 +37,6 @@ export default function RootLayout({
                 <ReactQueryProvider>
                     <Header />
                     <main>{children}</main>
-                    <Footer />
                 </ReactQueryProvider>
             </body>
         </html>
