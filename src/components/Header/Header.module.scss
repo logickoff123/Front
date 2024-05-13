@@ -9,17 +9,29 @@
   width: 1920px;
   height:160px;
 }
-.phone-icon{
-  padding-left: 22rem; 
-  padding-right:22rem;
-  margin-top:36px;
-}
-.cont-icon{
-  display: flex;
-  align-items: center; /* Вертикально центрирует элементы */
-  justify-content: center;
-  padding-right:66rem;
 
+.contact-icons{
+  display: flex;
+  flex-direction: row;
+
+    span{
+      margin-left: 10px;
+      padding-top: 5px;
+      font-family: 'Jost', sans-serif;
+      color:aliceblue;
+    }
+
+}
+.mail{
+  margin-left: 56px;
+  display: flex;
+  flex-direction: row;
+    span{
+      margin-left: 10px;
+      padding-top: 5px;
+      font-family: 'Jost', sans-serif;
+      color:aliceblue;
+    }
 }
 .viber{
   font-family: 'Jost', sans-serif;
@@ -32,7 +44,29 @@
   padding-left: 22rem; 
   padding-right:22rem;
 }
-.number{
+.logo_glav{
+  padding-left: 142px;
+  padding-right: 256px;
+}
+.liner{
+  display: flex;  
+  flex-direction: row;
+  align-items: center;
+  padding-left: 352px;
+  padding-right:352px;
+  padding-top:36px;
+  width: 100%;
+  margin: 0;
+}
+.user_icon{
+  display: flex;  
+  flex-direction: row;
+  gap: 50px
+}
+.price{
   font-family: 'Jost', sans-serif;
   color:aliceblue;
+  span{
+    padding-bottom: 5px;
+  }
 }
