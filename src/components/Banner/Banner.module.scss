@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Forum';
+    src: url('/fonts/Forum-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('/fonts/Jost-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+.banner {
+    position: relative;
+}
+  
+.imageContainer {
+    position: relative;
+}
+  
+.image {
+    width: 100%;
+    height: auto;
+}
+  
+.bannerText {
+    position: absolute;
+    top: 210px;
+    left: 352px;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+}
+.text1{
+    font-family: 'Forum', sans-serif;
+    font-size: 3.6875rem;
+    color:#BB8C5F;
+    line-height:75px;
+}
+.text2{
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5625rem;
+    color: #FAF6F2;
+    line-height:35px;
+    margin-top: 30px;
+}
+.idiot_button{
+    margin-top: 60px;
+}

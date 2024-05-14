@@ -2,16 +2,20 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-
+import { useState } from 'react';
 import styles from './Header.module.scss';
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  };
   return (
     <header className={styles.header}>
       <div className={styles.liner}>
         <div>
-          <div className = {styles['row']}>
+          <div className={styles['row']}>
             <div className={styles['contact-icons']}>
               <Image src="/assets/icons/Call.svg" width={28} height={28} alt="" />
               <span>+7 952 552-52-52</span>
@@ -42,11 +46,52 @@ function Header() {
         </div>
       </div>
 
-
       <div className={styles['line-icon']}>
         <Image src="/assets/icons/dividers.svg" width={1216} height={10} alt=" " />
       </div>
-    </header>
+
+      <div className={styles.catalog_container}>
+        <span className = {styles.cat}>Каталог</span>
+        <div className={styles.burger_menu} onClick={toggleMenu}>
+          {/* Кнопка бургер-меню */}
+          <div className={styles['burger-icon']}>
+            <div className={styles['burger-line']}></div>
+            <div className={styles['burger-line']}></div>
+            <div className={styles['burger-line']}></div>
+            <div className={styles['burger-line']}></div>
+          </div>
+          {isMenuOpen && (
+          <div className={styles['catalog-content']}>
+            <ul className="catalog-list">
+              <li><Link className={styles.text} href="#">Тату машинки</Link></li>
+              <li><Link className={styles.text} href="#">Тату краски</Link></li>
+              <li><Link className={styles.text} href="#">Тату иглы</Link></li>
+            </ul>
+          </div>
+          )}
+        </div>
+
+
+
+          <div className={styles.d3}>
+            <form>
+              <input type="text" placeholder="Искать здесь..." />
+              <button type="submit"></button>
+            </form>
+          </div>
+
+          <div className={styles.promo}>
+            <Link className={styles.text} href="#">Промокоды </Link>
+            <Link className={styles.text} href="#">Скидкы </Link>
+            <Link className={styles.text} href="#">Помощь </Link>
+            <Link className={styles.text} href="#">О нас </Link>
+            <Link className={styles.text} href="#">Контакты </Link>
+          </div>
+        </div>
+
+
+
+    </header >
   );
 }
 export default Header;
