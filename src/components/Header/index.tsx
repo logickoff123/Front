@@ -51,6 +51,7 @@ function Header() {
       </div>
 
       <div className={styles.catalog_container}>
+        <div className={styles.buttons_layout}>
           {!isMenuOpen && <span className={styles.cat}>Каталог</span>}
           <div className={styles.burger_menu} onClick={toggleMenu}>
             {/* Кнопка бургер-меню */}
@@ -61,21 +62,23 @@ function Header() {
               <div className={styles['burger-line']}></div>
             </div>
             {isMenuOpen && (
-              <div className={styles['catalog-content']}>
-                <ul className="catalog-list">
-                  <li><Link className={styles.text} href="#">Тату наборы</Link></li>
-                  <li><Link className={styles.text} href="#">Держатели</Link></li>
-                  <li><Link className={styles.text} href="#">Тату машинки</Link></li>
-                  <li><Link className={styles.text} href="#">Педали и провода</Link></li>
-                  <li><Link className={styles.text} href="#">Тату краски</Link></li>
-                  <li><Link className={styles.text} href="#">Блоки питания</Link></li>
-                  <li><Link className={styles.text} href="#">Наконечники</Link></li>
-                  <li><Link className={styles.text} href="#">Тату иглы</Link></li>
-                  <li><Link className={styles.text} href="#">Защитные емкости</Link></li>
-                </ul>
-              </div>
+                <div className={styles['catalog-content']}>
+                  <ul className="catalog-list">
+                    <li><Link className={styles.text} href="#">Тату наборы</Link></li>
+                    <li><Link className={styles.text} href="#">Держатели</Link></li>
+                    <li><Link className={styles.text} href="#">Тату машинки</Link></li>
+                    <li><Link className={styles.text} href="#">Педали и провода</Link></li>
+                    <li><Link className={styles.text} href="#">Тату краски</Link></li>
+                    <li><Link className={styles.text} href="#">Блоки питания</Link></li>
+                    <li><Link className={styles.text} href="#">Наконечники</Link></li>
+                    <li><Link className={styles.text} href="#">Тату иглы</Link></li>
+                    <li><Link className={styles.text} href="#">Защитные емкости</Link></li>
+                  </ul>
+                </div>
             )}
           </div>
+        </div>
+
           <div className={styles.d3}>
             <form>
               <input type="text" placeholder="Искать здесь..." />

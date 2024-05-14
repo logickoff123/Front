@@ -41,7 +41,7 @@
 
 }
 .line-icon{
-  padding-left: 22rem; 
+  padding-left: 22rem;
   padding-right:22rem;
 }
 .logo_glav{
@@ -52,7 +52,7 @@
 
 }
 .liner{
-  display: flex;  
+  display: flex;
   flex-direction: row;
   align-items: center;
   padding-left: 352px;
@@ -62,7 +62,7 @@
   margin: 0;
 }
 .user_icon{
-  display: flex;  
+  display: flex;
   flex-direction: row;
   gap: 50px
 }
@@ -81,7 +81,7 @@ gap: 10px;
   font-size: 13px;
 
   span {
-    margin-right: 10px; 
+    margin-right: 10px;
   }
 }
 .row{
@@ -89,10 +89,25 @@ gap: 10px;
   flex-direction: row;
 }
 
-.catalog_container{
-  display: flex;  
+.container_layout{
+  display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: 352px;
+  padding-right:352px;
+  width: 100%;
+  margin: 0;
+}
+
+.buttons_layout{
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog_container{
+  display: flex;
+  flex-direction: row;
   padding-left: 352px;
   padding-right:352px;
   width: 100%;
@@ -152,7 +167,7 @@ gap: 10px;
 
 .d3 {background: black;
   width: 410px;
-  margin-left: 60px;}
+  margin-left: 60px; height: 40px;}
 .d3 form {
   background: black;
   height: 39px;
