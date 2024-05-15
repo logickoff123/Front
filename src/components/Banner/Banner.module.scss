@@ -25,7 +25,7 @@
   
 .bannerText {
     position: absolute;
-    top: 210px;
+    top: 240px;
     left: 352px;
     transform: translateY(-50%);
     text-align: left;
@@ -46,4 +46,23 @@
 }
 .idiot_button{
     margin-top: 60px;
+}
+.myButton {
+    width: 275px;
+    height: 70px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #524336; 
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    font-family: 'Forum', sans-serif;
+    cursor: pointer;
+    opacity: 0.9;
+    border: 2px solid #BB8C5F;
+}
+  
+.myButton:hover {
+    opacity: 1;
 }

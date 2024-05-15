@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Jost';
+    src: url('/fonts/Jost-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.product_text{
+    font-family: 'Jost', sans-serif;
+    color:#3E424B;
+    font-weight: 600;
+    font-size: 1.875rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px;
+
+}
+.category {
+    margin: 0 30px;
+}
+
+.productCon {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    margin-top: 50px;
+    position: relative;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.category.hovered:hover {
+    color: #BB8C5F; // Оранжевый цвет
+}

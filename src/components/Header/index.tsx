@@ -90,6 +90,7 @@ function Header() {
           <Link className={styles.textp} href="#"> Промокоды</Link>
           <Link className={styles.textp} href="#">Скидкы</Link>
           <Link className={styles.textp} href="#">Помощь</Link>
+          <Link className={styles.textp} href="#">О нас</Link>
           <Link className={styles.textp} href="#">Контакты</Link>
         </div>
 
