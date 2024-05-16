@@ -44,6 +44,7 @@ export default function Category() {
                         <ProductCard key={i} />
                     ))}
                 </div>
+                <button className={styles.button}>Показать еще</button>
             </div>
         </div>
     );
