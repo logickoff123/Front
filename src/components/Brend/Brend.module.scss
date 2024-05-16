@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Jost';
+    src: url('/fonts/Jost-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+.contanier1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; // Добавляем отступ между контейнерами
+}
+  
+.contanier2 {
+    display: flex;
+    justify-content: center;
+}
+.image {
+    margin-right: 30px; // Добавляем отступ справа для всех изображений, кроме последнего
+}
+.popular_brend{
+    display: flex;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    margin-left:330px;
+    font-family: 'Jost', sans-serif;
+    font-size: 2.75rem;
+}
