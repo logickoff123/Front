@@ -1,26 +1,45 @@
-.man{
-    margin-top: 120px;
+@font-face {
+  font-family: 'Jost';
+  src: url('/fonts/Jost-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+.infocompany {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.info_picture {
+  flex-basis: 50%;
+  text-align: left;
+  margin-top: 120px;
+}
+
+.man {
+  max-width: 100%;
+  height: auto;
+}
+
 .info_text_content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
-  }
-  
-  .tatoo_magaz {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .info_text {
-    max-width: 50%;
-    text-align: left;
-  }
-  
-  .info_text p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
+  flex-basis: 50%;
+  text-align: left;
+}
+
+.tatoo_magaz {
+  display:flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color:#BB8C5F;
+  font-family: 'Jost', sans-serif;
+}
+
+.info_text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  flex-basis: 50%;
+  text-align: left;
+}
