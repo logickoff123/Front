@@ -9,7 +9,7 @@ export default function Footer() {
     return (
         <div className= {styles.footer}>
             <div className = {styles.square}>
-
+                <span>я лох</span>
             </div>
         </div>
 )

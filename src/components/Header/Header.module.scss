@@ -153,11 +153,15 @@ gap: 10px;
   transform: translateY(-8px) rotate(-45deg);
 }
 .catalog-content {
-  top: 100%;
-  left: 0;
+  position: absolute;
   background-color: black;
-  padding: 1rem;
-  z-index: 100;
+  z-index: 1;
+  padding: 1rem; /* Добавь отступы внутри меню */
+  transition: transform 0.3s, opacity 0.3s;
+}
+.catalog-content.open {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .text {
@@ -189,11 +193,13 @@ gap: 10px;
   height: 42px;
   padding-left: 15px;
   color: white;
+  flex-grow: 1; 
 }
 .d3 button {
   height: 42px;
   width: 42px;
   cursor: pointer;
+  margin-left: auto;
 }
 .d3 button:before {
   content: "\f002";
@@ -203,13 +209,19 @@ gap: 10px;
 }
 .promo{
   display: flex;
-  
   align-items: center;
+
 }
 .textp{
   color: white;
-  margin-right: 60px;
+  margin-right: 30px;
+  margin-left: 30px;
+  white-space: nowrap; /* Добавленное свойство */
 }
 .textp:last-child {
   margin-right: 0; /* Убираем отступ справа для последнего элемента */
+}
+.text2{
+  color: white;
+  font-family: 'Jost', sans-serif;
 }

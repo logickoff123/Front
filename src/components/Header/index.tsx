@@ -39,7 +39,7 @@ function Header() {
 
         <div className={styles.user_icon}>
           <div className={styles.price}>
-            <span>37500</span>
+            <Link className={styles.text2} href="/">3700</Link>
             <Image src="/assets/icons/bag_headrr.svg" width={28} height={28} alt="" />
           </div>
           <Image src="/assets/icons/heart_header.svg" width={28} height={28} alt="" />
@@ -88,7 +88,7 @@ function Header() {
           </div>
 
       <div className={styles.promo}>
-        <Link className={styles.textp} href="#"> Промо</Link>
+        <Link className={styles.textp} href="#"> Промоакции</Link>
         <Link className={styles.textp} href="#">Скидкы</Link>
         <Link className={styles.textp} href="#">Помощь</Link>
         <Link className={styles.textp} href="#"> О Нас</Link>
