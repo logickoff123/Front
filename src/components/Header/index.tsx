@@ -13,6 +13,7 @@ function Header() {
   };
   return (
     <header className={styles.header}>
+      <div className = {styles.full}> 
       <div className={styles.liner}>
         <div>
           <div className={styles['row']}>
@@ -95,8 +96,8 @@ function Header() {
       </div>
 
       </div>
-
-
+      </div>
+        
 
     </header >
   );
