@@ -1,9 +1,53 @@
 .footer{
+    background-color: black;
+    display: flex;
+    padding-left: px; /* Добавляем отступ слева */
+}
+.square{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:black;
+    width: 1920px;
+    height: 400px;
+    width: 100%; /* Растягиваем на всю доступную ширину */
 }
-.square{
-    color:black;
+.textp{
+    color: white;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 20px;
+}
+.logo{
+    margin-right: 200px;
+}
+
+.contanier1, .contanier2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 80px; /* Уменьшил отступ, чтобы контейнеры были ближе */
+}
+
+.mail{
+    margin-left: 56px;
+    display: flex;
+    flex-direction: row;
+      span{
+        margin-left: 10px;
+        padding-top: 5px;
+        font-family: 'Jost', sans-serif;
+        color:aliceblue;
+        margin-right: 40px;
+      }
+}
+.contact-icons{
+    display: flex;
+    flex-direction: row;
+  
+      span{
+        margin-left: 10px;
+        padding-top: 5px;
+        font-family: 'Jost', sans-serif;
+        color:aliceblue;
+      }
+  
 }
