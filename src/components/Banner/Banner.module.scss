@@ -17,7 +17,7 @@
   
 .image {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
   
 .bannerText {
@@ -63,7 +63,6 @@
 .myButton:hover {
     opacity: 1;
 }
-
 @media (max-width: 1200px) and (min-width: 992px){
     .bannerText{
         position: absolute;
@@ -134,46 +133,55 @@
         margin-top: 20px;
 
     }
-
-    @media (max-width: 768px) and (min-width: 576px){
-        .bannerText{
+}
+@media (max-width: 768px) and (min-width: 576px){
+    .bannerText{
             position: absolute;
-            top: 150px;
-            left: 50px;
+            top: 130px;
+            left: 80px;
             text-align: left;
             color: white;    
-        }
-        .text1{
-            font-size: 2.3rem;
+    }
+    .text1{
+            font-size: 1.8rem;
             color:#BB8C5F;
             line-height:30px;
     
-        }
-        .text2{
-            font-size: 1rem;
-        }
-    
-        .myButton {
-            width: 150px;
-            height: 50px;
-            font-size: 18px;
-            border-radius: 5px;
-            background-color: #524336; 
-            color: white;
-            text-align: center;
-            display: inline-block;
-            margin: 4px 2px;
-            font-family: 'Forum', sans-serif;
-            cursor: pointer;
-            opacity: 0.9;
-            border: 2px solid #BB8C5F;
-        }
-    
-        .idiot_button{
-            margin-top: 20px;
-    
-        }
-
     }
+    .text2{
+            font-size: 1.3rem;
+            line-height:30px;
+    }
+    .myButton,
+    .idiot_button{
+        display: none;
+    }
+
+
+}
+
+
+
+@media (max-width: 576px) {
+    .bannerText{
+            position: absolute;
+            top: 100px;
+            left: 30px;
+            text-align: left;
+            color: white;    
+    }
+    .text1{
+            font-size: 1.8rem;
+            color:#BB8C5F;
+            line-height:30px;
     
+    }
+    .text2{
+            font-size: 1.3rem;
+            line-height:30px;
+    }
+    .myButton,
+    .idiot_button{
+        display: none;
+    }
 }
