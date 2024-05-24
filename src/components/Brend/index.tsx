@@ -7,7 +7,7 @@ export default function Brend() {
         <div className = {styles.Brend}>
             <span className = {styles.popular_brend}>Популярные бренды</span>
                 <div className = {styles.contanier1}>
-                    <Image  src = "/assets/images/brand1.svg"  width={221} height={82} alt ="" className={styles.image} />
+                    <Image  src = "/assets/images/dracon.svg"  width={221} height={82} alt ="" className={styles.image} />
                     <Image  src = "/assets/images/brend2.svg"  width={221} height={82} alt ="" className={styles.image}/>
                     <Image  src = "/assets/images/brend3.svg"  width={221} height={82} alt ="" className={styles.image}/>
                     <Image  src = "/assets/images/brend4.svg"  width={221} height={82} alt ="" className={styles.image}/>

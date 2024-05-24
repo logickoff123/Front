@@ -18,12 +18,12 @@ function Header() {
         <div>
           <div className={styles['row']}>
             <div className={styles['contact-icons']}>
-              <Image src="/assets/icons/Call.svg" width={28} height={28} alt="" />
-              <span>+7 952 552-52-52</span>
+              <Image src="/assets/icons/Call.svg" width={28} height={28} alt=""  className = {styles.callicon}/>
+              <span className = {styles.telephone}>+7 952 552-52-52</span>
             </div>
 
             <div className={styles.mail}>
-              <Image src="/assets/icons/mail.svg" width={28} height={28} alt="" />
+              <Image src="/assets/icons/mail.svg" width={28} height={28} alt="" className={styles.gmail}/>
               <span>Mr.Driskell@mail.ru</span>
             </div>
           </div>
@@ -42,8 +42,12 @@ function Header() {
             <Link className={styles.text2} href="/">3700</Link>
             <Image src="/assets/icons/bag_headrr.svg" width={28} height={28} alt="" />
           </div>
-          <Image src="/assets/icons/heart_header.svg" width={28} height={28} alt="" />
+          <div className ={styles.heart}>
           <Image src="/assets/icons/user_header.svg" width={28} height={28} alt="" />
+          </div>
+          <div className = {styles.user}>
+          <Image src="/assets/icons/heart_header.svg" width={28} height={28} alt="" />
+          </div>
         </div>
       </div>
 
@@ -83,7 +87,6 @@ function Header() {
           <div className={styles.d3}>
             <form>
               <input type="text" placeholder="Искать здесь..." />
-              <button type="submit"></button>
             </form>
           </div>
 

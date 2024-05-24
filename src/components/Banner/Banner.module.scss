@@ -17,7 +17,7 @@
   
 .image {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
   
 .bannerText {
@@ -62,4 +62,118 @@
   
 .myButton:hover {
     opacity: 1;
+}
+
+@media (max-width: 1200px) and (min-width: 992px){
+    .bannerText{
+        position: absolute;
+        top: 190px;
+        left: 100px;
+        text-align: left;
+        color: white;
+        
+    }
+    .idiot_button{
+        margin-top: 40px;
+
+    }
+
+    .myButton {
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 5px;
+        background-color: #524336; 
+        color: white;
+        text-align: center;
+        display: inline-block;
+        margin: 4px 2px;
+        font-family: 'Forum', sans-serif;
+        cursor: pointer;
+        opacity: 0.9;
+        border: 2px solid #BB8C5F;
+    }
+
+}
+@media (max-width: 992px) and (min-width: 768px){
+    .bannerText{
+        position: absolute;
+        top: 130px;
+        left: 100px;
+        text-align: left;
+        color: white;    
+    }
+
+    .text1{
+        font-size: 2.3rem;
+        color:#BB8C5F;
+        line-height:45px;
+
+    }
+    .text2{
+        font-size: 1.3rem;
+    }
+
+    .myButton {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 5px;
+        background-color: #524336; 
+        color: white;
+        text-align: center;
+        display: inline-block;
+        margin: 4px 2px;
+        font-family: 'Forum', sans-serif;
+        cursor: pointer;
+        opacity: 0.9;
+        border: 2px solid #BB8C5F;
+    }
+
+    .idiot_button{
+        margin-top: 20px;
+
+    }
+
+    @media (max-width: 768px) and (min-width: 576px){
+        .bannerText{
+            position: absolute;
+            top: 150px;
+            left: 50px;
+            text-align: left;
+            color: white;    
+        }
+        .text1{
+            font-size: 2.3rem;
+            color:#BB8C5F;
+            line-height:30px;
+    
+        }
+        .text2{
+            font-size: 1rem;
+        }
+    
+        .myButton {
+            width: 150px;
+            height: 50px;
+            font-size: 18px;
+            border-radius: 5px;
+            background-color: #524336; 
+            color: white;
+            text-align: center;
+            display: inline-block;
+            margin: 4px 2px;
+            font-family: 'Forum', sans-serif;
+            cursor: pointer;
+            opacity: 0.9;
+            border: 2px solid #BB8C5F;
+        }
+    
+        .idiot_button{
+            margin-top: 20px;
+    
+        }
+
+    }
+    
 }

@@ -297,3 +297,392 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
+
+
+
+
+@media (max-width: 576px) {
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .catalog_list,
+    .catag_list2,
+    .catag_list3,
+    .catag_list4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .sets {
+        width: 280px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left:29px;
+        margin-bottom: 45px;
+    }
+    .touch {
+        width: 280px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .imagsets3{
+       width: 200px; 
+    }
+
+
+    .imagsets{
+    width: 200px;
+
+    }
+    .imagsets1 {
+    margin-top: 10px;
+    width: 380px;
+}
+    .tato_machine{
+        width: 280px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .catag_list2{
+        margin-bottom: 30px;
+    }
+
+    .imagsets2{
+        width: 200px;
+    }
+    
+    
+    .eating_block{
+        width: 280px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -30px;
+        margin-left: 20px;
+    }
+    .ending{
+        width: 280px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 21px;
+    }
+    .tatoo_needles{
+        width: 280px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 16px;
+        margin-left: 21px;
+        margin-top: 50px;
+
+    }
+
+    .rashodnic{
+        width: 280px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 21px;
+        margin-bottom: 50px;
+    
+    }
+    .acses{
+        width: 280px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 21px;
+        margin-bottom: 50px;
+    
+    
+    }
+    .cserocs{
+        width: 280px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 21px;
+    
+    }
+    
+    .dop_catalog,
+    .catalog_list2,
+    .paints,
+    .pidril{
+        display: none;
+    }
+
+}
+
+@media (max-width: 992px) and (min-width: 768px){
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .catalog_list,
+    .catag_list2,
+    .catag_list3,
+    .catag_list4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .sets {
+        width: 510px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left:29px;
+        margin-bottom: 45px;
+    }
+    .touch {
+        width: 510px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .imagsets3{
+       width: 200px; 
+    }
+
+
+    .imagsets{
+    width: 200px;
+
+    }
+    .imagsets1 {
+    margin-top: 10px;
+    width: 380px;
+}
+    .tato_machine{
+        width: 510px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .catag_list2{
+        margin-bottom: 30px;
+    }
+
+    .imagsets2{
+        width: 200px;
+    }
+    
+    
+    .eating_block{
+        width: 510px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -30px;
+        margin-left: 20px;
+    }
+    .ending{
+        width: 510px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 21px;
+    }
+    .tatoo_needles{
+        width: 510px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 16px;
+        margin-left: 21px;
+        margin-top: 50px;
+
+    }
+
+    .rashodnic{
+        width: 510px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 21px;
+        margin-bottom: 50px;
+    
+    }
+    .acses{
+        width: 510px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 21px;
+        margin-bottom: 50px;
+    
+    
+    }
+    .cserocs{
+        width: 510px;
+        height: 310px;
+        background-color: #F5F5F5;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Jost', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 21px;
+    
+    }
+    
+    .dop_catalog,
+    .catalog_list2,
+    .paints,
+    .pidril{
+        display: none;
+    }
+}

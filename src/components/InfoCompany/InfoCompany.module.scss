@@ -43,3 +43,15 @@
   flex-basis: 50%;
   text-align: left;
 }
+
+@media (max-width: 576px){
+  .infocompany,
+  .info_picture,
+  .man,
+  .info_text_content,
+  .tatoo_magaz,
+  .info_text p {
+    display: none;
+  }
+
+}

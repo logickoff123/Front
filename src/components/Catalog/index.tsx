@@ -73,7 +73,7 @@ export default function Catalog() {
             <div className={styles.dop_catalog}>
                 <div className={styles.paints_lip}>
                     <div className={styles.imgpaint}>
-                        <Image src="assets/images/paintslil.svg" width={930} height={470} alt="" />
+                        <Image src="assets/images/paintslil.svg" width={930} height={470} alt="" className={styles.painsil}/>
                         <div className={styles.cont_text_p}>
                             <Link className={styles.text8} href="/">Краски Lip Nitn</Link>
                         </div>
@@ -81,7 +81,7 @@ export default function Catalog() {
                 </div>
                 <div className={styles.foxx}>
                     <div className={styles.imgfox}>
-                        <Image src="assets/images/foxxvipper.svg" width={930} height={470} alt="" />
+                        <Image src="assets/images/foxxvipper.svg" width={930} height={470} alt="" className = {styles.foxxviper}/>
                         <div className={styles.cont_text_t}>
                             <Link className={styles.text9} href="/">Foxx viper -</Link>
                             <Link className={styles.text9} href="/">хиты продаж</Link>

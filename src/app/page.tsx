@@ -9,11 +9,9 @@ import InfoCompany from "@/components/InfoCompany";
 export default function Home() {
   return (
     <div>
-      <Banner/>
       <Category/>
       <Catalog/>
       <Brend/>
-      <InfoCompany/>
     </div>
   );
 }

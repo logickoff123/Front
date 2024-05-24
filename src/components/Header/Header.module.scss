@@ -51,10 +51,11 @@
   padding-right:22rem;
 }
 .logo_glav{
-  padding-left: 142px;
-  padding-right: 256px;
+  //padding-left: 142px;
+  //padding-right: 256px;
   display: flex;
   align-items: flex-start;
+
 
 }
 .liner{
@@ -66,6 +67,7 @@
   padding-top:36px;
   width: 100%;
   margin: 0;
+  justify-content: space-around;
 }
 .user_icon{
   display: flex;
@@ -99,8 +101,8 @@ gap: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 352px;
-  padding-right:352px;
+  //padding-left: 352px;
+  //padding-right:352px;
   width: 100%;
   margin: 0;
 }
@@ -114,8 +116,9 @@ gap: 10px;
 .catalog_container{
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding-left: 352px;
-  padding-right:352px;
+  //padding-right:352px;
   width: 100%;
   margin: 0;
 }
@@ -215,7 +218,7 @@ gap: 10px;
 .textp{
   color: white;
   margin-right: 30px;
-  margin-left: 30px;
+  margin-left: 20px;
   white-space: nowrap; /* Добавленное свойство */
 }
 .textp:last-child {
@@ -224,4 +227,234 @@ gap: 10px;
 .text2{
   color: white;
   font-family: 'Jost', sans-serif;
+}
+.heart{
+  color: white;
+}
+.user{
+  color:white;
+}
+.telephone{
+  color:white;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) and (min-width: 992px) {
+
+  .full {
+    width: 100%;
+    height: 120px;
+  }
+  .liner {
+    display: flex;
+    justify-content: space-around;
+
+    //padding-left: 5px;
+    //padding-right: 5px;
+    //padding-top:20px;
+  }
+
+  .contact-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+  }
+  .telephone{
+    color:white;
+
+  }
+  
+  .mail{
+    margin-left: 75px;
+      span{
+        //margin-right:30px;
+        //margin-left: 10px;
+        ///padding-top: 5px;
+        font-family: 'Jost', sans-serif;
+        color:aliceblue;
+      }
+  }
+  .user_icon{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 50px;
+    //padding-bottom: 10px;
+    //padding-left: 10px;
+  }
+  .user{
+    color:white;
+  }
+  .logo_glav{
+    //display: flex;
+    //justify-content: center;
+    margin-left: 60px;
+    margin-right:60px;
+  
+  
+  }
+  .catalog_container,
+  .mesenger,
+  .line-icon,
+  .catalog_container,
+  .container_layout {
+    display: none;
+  }
+}
+
+
+/* Для экранов шириной до 992px */
+@media (max-width: 992px) and (min-width: 768px){
+  .full {
+    width: 100%;
+    height: 80px;
+  }
+  .liner{
+    height: 0%;
+  }
+  .catalog_container{
+    height: 0%;
+    padding-left: 5px;
+    padding-bottom: 100px;
+  }
+
+  .buttons_layout{
+    //padding-left: 10px;
+    //padding-top:10px;
+    //padding-top: 10px;
+    padding-left: 50px;
+  }
+
+  .d3{
+    width: 310px;
+    margin-left: 30px;
+    margin-right: 20px;
+
+  }
+  .cat{
+    font-family: 'Jost', sans-serif;
+    color:#D0D0D0;
+    margin-right: 10px;
+    size:2.5rem;
+  }
+  
+  .user_icon{
+    padding-left: 600px;
+    padding-bottom: -100px;
+  }
+  .submit{
+    margin-bottom: -50px;
+  }
+
+
+
+  .line-icon,
+  .mesenger,
+  .promo,
+  .contact-icons,
+  .mail,
+  //.user_icon,
+  .logo_glav{
+    display: none;
+  }
+
+}
+@media (max-width: 768px) and (min-width: 576px){
+  .full {
+    width: 100%;
+    height: 80px;
+  }
+  .liner{
+    height: 0%;
+  }
+  .catalog_container{
+    height: 0%;
+    padding-left: 5px;
+    padding-bottom: 100px;
+  }
+
+  .buttons_layout{
+    //padding-left: 10px;
+    //padding-top:10px;
+    //padding-top: 10px;
+    padding-left: 50px;
+  }
+
+  .d3{
+    width: 310px;
+    margin-left: 30px;
+    margin-right: 20px;
+
+  }
+  .cat{
+    font-family: 'Jost', sans-serif;
+    color:#D0D0D0;
+    margin-right: 10px;
+    size:2.5rem;
+  }
+  
+  .user_icon{
+    //padding-left: 600px;
+  }
+
+
+
+  .submit,
+  .line-icon,
+  .mesenger,
+  .promo,
+  .contact-icons,
+  .mail,
+  //.user_icon,
+  .logo_glav{
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .full {
+    width: 100%;
+    height: 80px;
+  }
+  .liner{
+    height: 0%;
+  }
+  .catalog_container{
+    height: 0%;
+    padding-left: 2px;
+    padding-bottom: 100px;
+  }
+
+  .buttons_layout{
+    //padding-left: 10px;
+    //padding-top:10px;
+    //padding-top: 10px;
+    padding-left: 5px;
+  }
+  .user_icon{
+    padding-right:27px;
+  }
+
+
+  .submit,
+  .d3,
+  .line-icon,
+  .mesenger,
+  .promo,
+  .contact-icons,
+  .mail,
+  .logo_glav{
+    display: none;
+  }
 }

@@ -44,3 +44,79 @@
     margin-top: 50px;
     font-size: 1.25rem;
 }
+@media (max-width: 576px) {
+    .product {
+      grid-template-columns: 1fr; /* Меняем на одну колонку */
+      gap: 20px; /* Уменьшаем отступ между карточками */
+    }
+  
+    .button {
+      width: 50%; /* Растягиваем кнопку на всю ширину */
+    }
+
+    .product_text{
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .product {
+      grid-template-columns: 1fr; /* Меняем на одну колонку */
+      gap: 20px; /* Уменьшаем отступ между карточками */
+    }
+  
+    .button {
+      width: 50%; /* Растягиваем кнопку на всю ширину */
+    }
+
+    .product_text{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+    .product {
+        grid-template-columns: 1fr; /* Меняем на одну колонку */
+        gap: 20px; /* Уменьшаем отступ между карточками */
+      }
+    
+      .button {
+        width: 50%; /* Растягиваем кнопку на всю ширину */
+      }
+  
+      .product_text{
+          display: none;
+      }
+
+}
+@media (max-width: 992px) and (min-width: 768px){
+    .product {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; /* Уменьшаем отступ между карточками */
+      }
+    
+      .button {
+        width: 50%; /* Растягиваем кнопку на всю ширину */
+      }
+    
+      .product_text {
+        display: none;
+      }
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+    .product {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+    
+      .button {
+        width: 50%;
+      }
+    
+      .product_text {
+        display: none;
+      }
+}
+
