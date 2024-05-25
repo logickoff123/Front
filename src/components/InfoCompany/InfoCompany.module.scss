@@ -5,82 +5,61 @@
   font-style: normal;
 }
 
-.h{
-  color:#BB8C5F;
-  font-family: 'Jost', sans-serif;
+.pa {
+  font-size: 17px;
 }
 
-.pa{
-  color: black;
-  font-family: 'Jost', sans-serif;
-}
-
-.image{
-  aspect-ratio: 930/630;
-}
-.container{
+.container {
+  background-color:white;
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  column-gap: 20px;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1568px;
 }
 
-
-.text{
-  max-width: 582px;
-  min-width: 400px;
-  margin-top: 150px;
+.text p:nth-child(2) {
+  margin: 20px 0;
 }
 
+.image {
+  aspect-ratio: 930 / 635;
+  background-image: url(https://s3-alpha-sig.figma.com/img/1c2f/d636/6c4feb0b005ab004d2cfce5d3961856c?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=blS64nGI7HyPUSdNVPt2dNWPeZhIh2Vly1BBuRFHLKSQsastG-YWGO-fJiEO9veQx1lw2azStTi0ACuhSS0zrUKM2Mm3GVw8~VqATQQMxO95clawGo9vwoJ8C4~ShiQjAE31623EYS0hvLvRgIOdqGAt-FzN8dXSdiwTlLfp7LI7iMyN4hM27XRJqPcV6c-xTsXaHWmy9X51WSpbHCFgI2sFKE2avZgXehMsjW2x-tyMhBr07i~uO7SQJVz20sRijOaenQW7XXbouIeg0q5n7khx~jdoQTo2Ifg~aGbvbmjjis6XBbOaA8iN0HuLd6IpZRusm9ppGC9I8ifeyFZIYA__);
+  background-size: cover;
+}
 
+.text {
+  background-color: white;
+}
 
-@media (max-width: 1200px) and (min-width: 992px){
-  .h{
-    color:#BB8C5F;
-    font-family: 'Jost', sans-serif;
+@media (min-width: 1200px) {
+  .text {
+    max-width: 600px;
   }
-  
-  .pa{
-    color: black;
-    font-family: 'Jost', sans-serif;
-  }
-  
-  
-  .container{
+  .image {
+    max-width: 930px;
+    min-width: 620px;
     width: 100%;
-    display: flex;
-    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .text {
+    width: calc(50% - 10px);
+  }
+  .image {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
     flex-wrap: wrap;
-    justify-content: flex-start;
-    column-gap: 20px;
   }
-  
-  
-  .text{
-    max-width: 300px;
-    min-width: 300px;
-    margin-top: 150px;
+  .text,
+  .image {
+    width: 100%;
   }
-
-}
-
-@media (max-width: 992px) and (min-width: 768px){
-
-
-
-}
-
-@media (max-width: 768px) and (min-width: 576px){
-
-
-
-}
-
-@media (max-width: 576px) {
-
-
-
-
 }

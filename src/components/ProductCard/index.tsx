@@ -3,8 +3,9 @@ import styles from "./ProductCard.module.scss"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
+import { Product } from "@/types/product"
 
-export default function ProductCard() {
+export default function ProductCard(props: Product) {
   const [showAddToCartButton, setShowAddToCartButton] = useState(false)
   const [isHovered, setIsHovered] = useState(false)
 
@@ -31,22 +32,16 @@ export default function ProductCard() {
       </div>
       <Link href="#">
         <div className={styles.image_con}>
-          <Image
-            src="/assets/images/card1.svg"
-            alt='product'
-            height={289}
-            width={228}
-            className={styles.productImage}
-          />
+          <img src={`assets/images/${props.image}`} alt="Not found" />
         </div>
       </Link>
       <Link href="#">
         <div className={styles.textBlock}>
-          <p>Foxxx Kitsune Mini Black Vintage RCA</p>
+          <span>{props.name}</span>
         </div>
       </Link>
       <div className={`${styles.priceAndCart} ${isHovered ? styles.expanded : ''}`}>
-        <p className={styles.price}>6000 P</p>
+        <p className={styles.price}>{props.price}</p>
         {showAddToCartButton && (
           <button className={styles.addToCartButton}>Добавить в корзину</button>
         )}

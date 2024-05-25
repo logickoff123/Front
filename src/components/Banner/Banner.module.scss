@@ -164,21 +164,17 @@
 
 @media (max-width: 576px) {
     .bannerText{
-            position: absolute;
             top: 100px;
             left: 30px;
             text-align: left;
             color: white;    
     }
-    .text1{
-            font-size: 1.8rem;
-            color:#BB8C5F;
-            line-height:30px;
-    
-    }
+
     .text2{
-            font-size: 1.3rem;
-            line-height:30px;
+        
+    }
+    .text1{
+
     }
     .myButton,
     .idiot_button{

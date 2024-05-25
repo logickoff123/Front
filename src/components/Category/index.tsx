@@ -2,7 +2,10 @@
 import styles from "./Category.module.scss"
 import Image from "next/image"
 import ProductCard from "../ProductCard"
+import { useProductsQuery } from "@/hooks/useProductsQuery"
+
 export default function Category() {
+    const { data } = useProductsQuery();
     const handleCategoryClick = (category: string) => {
         // Здесь можно добавить логику, которая будет выполняться при клике на категорию
         console.log(`Clicked on ${category}`);
@@ -38,11 +41,12 @@ export default function Category() {
                     </p>
                 </div>
             </div>
+
             <div className={styles.productCon}>
                 <div className={styles.product}>
-                    {Array.from({ length: 8 }, (_, i) => (
-                        <ProductCard key={i} />
-                    ))}
+                {data?.map(product => (
+                    <ProductCard {...product} key={product.id} />
+                ))}
                 </div>
                 <button className={styles.button}>Показать еще</button>
             </div>
