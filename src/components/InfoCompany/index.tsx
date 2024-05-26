@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function InfoCompany() {
     return (
         <div className= {styles.container}>
-            <div className={styles.image}>image</div>
+            <div className={styles.image}></div>
             <div className={styles.text}>
                 <h1 className = {styles.h}>Тату магазин Mr. Driskel</h1>
 

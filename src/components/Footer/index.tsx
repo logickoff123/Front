@@ -21,9 +21,6 @@ export default function Footer() {
                     <Link className={styles.textp} href="#"> О нас</Link>
                     <Link className={styles.textp} href="#">Контакты</Link>
                 </div>
-                <div className={styles.long}>
-                    <Image src="/assets/icons/long.svg" width={100} height={396} alt="" />
-                </div>
                 <div className={styles.mail}>
                     <Image src="/assets/icons/mail.svg" width={28} height={28} alt="" />
                     <span>Mr.Driskell@mail.ru</span>

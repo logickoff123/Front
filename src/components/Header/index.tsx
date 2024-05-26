@@ -43,7 +43,7 @@ function Header() {
             <Image src="/assets/icons/bag_headrr.svg" width={28} height={28} alt="" />
           </div>
           <div className ={styles.heart}>
-          <Image src="/assets/icons/user_header.svg" width={28} height={28} alt="" />
+          <Link href={'/Registr'} > <Image src="/assets/icons/user_header.svg" width={28} height={28} alt="" /></Link>
           </div>
           <div className = {styles.user}>
           <Image src="/assets/icons/heart_header.svg" width={28} height={28} alt="" />

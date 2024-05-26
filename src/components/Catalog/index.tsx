@@ -24,15 +24,15 @@ export default function Catalog() {
                 <div className={styles.center1}>
                     <ul className={styles.catag_list2}>
                         <li className={styles.tato_machine}>
-                            <Link className={styles.text1} href="/">Тату машинки</Link>
+                            <Link className={styles.text10} href="/">Тату машинки</Link>
                             <Image src="assets/images/tato.svg" width={259} height={259} alt="" className={styles.imagsets2} />
                         </li>
                         <li className={styles.pidril}>
-                            <Link className={styles.text1} href="/">Педали и провода</Link>
+                            <Link className={styles.text11} href="/">Педали и провода</Link>
                             <Image src="assets/images/pidril.svg" width={290} height={350} alt="" className={styles.imagsets3} />
                         </li>
                         <li className={styles.paints}>
-                            <Link className={styles.text1} href="/">Краски</Link>
+                            <Link className={styles.text12} href="/">Краски</Link>
                             <Image src="assets/images/paints.svg" width={307} height={266} alt="" className={styles.imagsets3} />
                         </li>
                     </ul>
@@ -44,7 +44,7 @@ export default function Catalog() {
                             <Image src="assets/images/eating.svg" width={259} height={259} alt="" className={styles.imagsets2} />
                         </li>
                         <li className={styles.ending}>
-                            <Link className={styles.text1} href="/">Наконечники</Link>
+                            <Link className={styles.text13} href="/">Наконечники</Link>
                             <Image src="assets/images/ending.svg" width={321} height={350} alt="" className={styles.imagsets3} />
                         </li>
                         <li className={styles.tatoo_needles}>
@@ -60,7 +60,7 @@ export default function Catalog() {
                             <Image src="assets/images/rashodnic.svg" width={259} height={259} alt="" className={styles.imagsets2} />
                         </li>
                         <li className={styles.acses}>
-                            <Link className={styles.text1} href="/">Аксесуары</Link>
+                            <Link className={styles.text15} href="/">Аксесуары</Link>
                             <Image src="assets/images/acses.svg" width={321} height={350} alt="" className={styles.imagsets3} />
                         </li>
                         <li className={styles.cserocs}>

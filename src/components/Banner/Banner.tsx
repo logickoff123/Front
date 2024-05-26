@@ -9,8 +9,8 @@ export default function Banner() {
                     <Image src="/assets/images/bg.svg" width={1920} height={700} alt="Banner" className={styles.image} />
                     <div className={styles.bannerText}>
                         <div className = {styles.text1}>
-                            <p>Лучшие товары</p>
-                            <p>в мире татуировок</p>
+                            <p className={styles.textwhy}>Лучшие товары</p>
+                            <p className={styles.textpi}>в мире татуировок</p>
                         </div>
                         <div className = {styles.text2}>
                             <p>Oборудование и расходники</p>

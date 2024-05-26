@@ -146,6 +146,7 @@
             font-size: 1.8rem;
             color:#BB8C5F;
             line-height:30px;
+            font-family: 'Forum', sans-serif;
     
     }
     .text2{
@@ -161,23 +162,52 @@
 }
 
 
+@media (max-width: 576px)
+    {
+    .image{
+        transform: scale(2); 
+        transform-origin: top center;
+        margin-bottom: 150px;
 
-@media (max-width: 576px) {
-    .bannerText{
-            top: 100px;
-            left: 30px;
-            text-align: left;
-            color: white;    
     }
 
-    .text2{
-        
+    .bannerText{
+        position: absolute;
+        top: 140px;
+        left: 15px;
+        text-align: left;
+        color: white; 
     }
     .text1{
-
+        font-size: 1.2rem;
+        line-height:30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color:#BB8C5F; 
+        
     }
-    .myButton,
-    .idiot_button{
-        display: none;
+
+    .myButton{
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 5px;
+        background-color: #524336; 
+        color: white;
+        text-align: center;
+        display: inline-block;
+        margin: 4px 2px;
+        font-family: 'Forum', sans-serif;
+        cursor: pointer;
+        opacity: 0.9;
+        border: 2px solid  #BB8C5F;
+    }
+
+        .idiot_button{
+            margin-top: 5px;
+        }
+
+    .text2{
+        display:none;
     }
 }
