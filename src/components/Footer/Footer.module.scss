@@ -1,5 +1,4 @@
 .footer{
-    margin-top: 50px;
     background-color: black;
     display: flex;
     padding-left: px; /* Добавляем отступ слева */
@@ -27,9 +26,13 @@
     justify-content: center;
     margin-right: 80px; /* Уменьшил отступ, чтобы контейнеры были ближе */
 }
-
+.contanier3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .mail{
-    margin-left: 56px;
+    margin-left: 150px;
     display: flex;
     flex-direction: row;
       span{
@@ -41,6 +44,7 @@
       }
 }
 .contact-icons{
+    margin-left: 150px;
     display: flex;
     flex-direction: row;
   
@@ -54,13 +58,33 @@
 }
 
 @media (max-width: 576px){
-  .footer{
+  .footer {
     background-color: black;
     display: flex;
-    margin-top: 20px;
+
 }
-  .long{
-    display: none;
+
+  .square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
 
+  .logo{
+    margin-left:110px;
+    margin-top: -110px;
+  }
+  .contanier1,
+  .contanier2 {
+      margin-left: 20px;
+  }
+
+  .textp {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .contanier3{
+    margin-top: -100px;
+  }
 }

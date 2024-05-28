@@ -21,13 +21,15 @@ export default function Footer() {
                     <Link className={styles.textp} href="#"> О нас</Link>
                     <Link className={styles.textp} href="#">Контакты</Link>
                 </div>
-                <div className={styles.mail}>
-                    <Image src="/assets/icons/mail.svg" width={28} height={28} alt="" />
-                    <span>Mr.Driskell@mail.ru</span>
-                </div>
-                <div className={styles['contact-icons']}>
-                    <Image src="/assets/icons/Call.svg" width={28} height={28} alt="" />
-                    <span>+7 952 552-52-52</span>
+                <div className={styles.contanier3}>
+                    <div className={styles.mail}>
+                        <Image src="/assets/icons/mail.svg" width={28} height={28} alt="" />
+                        <span>Mr.Driskell@mail.ru</span>
+                    </div>
+                    <div className={styles['contact-icons']}>
+                        <Image src="/assets/icons/Call.svg" width={28} height={28} alt="" />
+                        <span>+7 952 552-52-52</span>
+                    </div>
                 </div>
             </div>
         </div>

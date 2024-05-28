@@ -1,19 +1,19 @@
 'use client'
-import { SetStateAction, useState } from 'react'; // Импортируем useState для управления состоянием
-import styles from './registration.module.scss'; // Импортируем стили
+import { SetStateAction, useState } from 'react'; 
+import styles from './registration.module.scss'; 
 import Link from 'next/link';
 
 export default function Mainnn() {
-  const [username, setUsername] = useState(''); // Состояние для имени пользователя
-  const [password, setPassword] = useState(''); // Состояние для пароля
-  const [errorMessage, setErrorMessage] = useState(''); // Состояние для сообщений об ошибках
+  const [username, setUsername] = useState(''); 
+  const [password, setPassword] = useState(''); 
+  const [errorMessage, setErrorMessage] = useState(''); 
 
   const handleAddToCart = async () => {
-    setErrorMessage(''); // Очищаем все предыдущие сообщения об ошибках
+    setErrorMessage(''); 
 
     try {
-      const userData = { username, password }; // Создаем объект данных пользователя
-      const response = await fetch('http://localhost:7777/api/auth/register', { // Замените URL-адрес вашего бэкэнда
+      const userData = { username, password };
+      const response = await fetch('http://localhost:7777/api/auth/register', { 
         mode: 'cors',
         method: 'POST',
         headers: {
@@ -23,15 +23,15 @@ export default function Mainnn() {
       });
 
       if (response.ok) {
-        console.log('Пользователь успешно добавлен!'); // Сообщение об успехе
-        // Обработайте успешную регистрацию (например, перенаправление, очистка формы)
+        console.log('Пользователь успешно добавлен!'); 
+       
       } else {
         const error = await response.json();
-        setErrorMessage(error.message); // Устанавливаем сообщение об ошибке из ответа
+        setErrorMessage(error.message); 
       }
     } catch (error) {
-      console.error('Ошибка при добавлении пользователя:', error); // Записываем ошибку для отладки
-      setErrorMessage('Произошла ошибка. Повторите попытку позже.'); // Общее сообщение об ошибке для пользователя
+      console.error('Ошибка при добавлении пользователя:', error); 
+      setErrorMessage('Произошла ошибка. Повторите попытку позже.'); 
     }
   };
 

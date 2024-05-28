@@ -23,6 +23,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1568px;
+  margin-bottom: 80px;
 }
 
 .text p:nth-child(2) {
@@ -63,7 +64,10 @@
   .container {
     flex-wrap: wrap;
   }
-  .text,
+  .text{
+    width: 100%;
+    margin-left: 20px;
+  }
   .image {
     width: 100%;
   }
