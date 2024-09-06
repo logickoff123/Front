@@ -32,7 +32,7 @@ export default function ProductCard(props: Product) {
       </div>
       <Link href="#">
         <div className={styles.image_con}>
-          <img src={`assets/images/${props.image}`} alt="Not found" />
+          <img src={`assets/images/uploaded/product/${props.image}`} alt="Not found" />
         </div>
       </Link>
       <Link href="#">
