@@ -1,6 +1,6 @@
 import { Category } from '../types/category'
 import { Product } from '../types/product'
-const BASE = 'http://localhost:7777/api'
+const BASE = 'http://89.169.130.221:8080/api'
 
 export async function fetchCategories(): Promise<Category[]> {
     const res = await fetch(`${BASE}/category/all`)

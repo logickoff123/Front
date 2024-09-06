@@ -13,7 +13,7 @@ export default function Mainnn() {
 
     try {
       const userData = { username, password };
-      const response = await fetch('http://localhost:7777/api/auth/register', { 
+      const response = await fetch('http://89.169.130.221:8080/api/auth/register', { 
         mode: 'cors',
         method: 'POST',
         headers: {
