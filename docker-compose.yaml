@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  nextjs-api:
+    image: nextjs-api
+    container_name: nextjs-api
+    ports:
+      - "3000:3000"
